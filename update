@@ -1,0 +1,9 @@
+#!/bin/bash
+
+./clean
+echo ================= Updating ===================
+git pull
+cd ../SwiftLevelDB
+./tag
+cd ../ldb-dump
+swift package update

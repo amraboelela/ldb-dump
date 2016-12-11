@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./build
+sudo cp ./.build/debug/ldb-dump /usr/bin
