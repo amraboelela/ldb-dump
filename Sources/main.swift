@@ -27,15 +27,15 @@ if args.count > 3 {
 if arg1 == "?" || arg1 == "" {
         print("Usage")
         print("ldb-dump [-v] <Database name> [<Prefix>]")
-        print("-v: This switch means printing values along with keys")
+        print("-v: Print values along with keys. If empty then will print keys only")
         print("Database name: It can also be the path to the db if not in current path")
-        print("Prefix: The prefix of keys you want to see")
+        print("Prefix: The prefix of keys you want to see in the db. If empty, then will print all keys")
         print("")
         print("Examples:")
         print("ldb-dump Database")
         print("ldb-dump -v Database")
         print("ldb-dump Database NS-123")
-        print("ldb-dump -v Database NS-123")
+        print("ldb-dump -v Database NS-123")  
 } else {
     var printValues = false
     var dbName = ""
