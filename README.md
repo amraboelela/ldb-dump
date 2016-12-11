@@ -18,7 +18,6 @@ You can use xCode to run it in the simulator.
     Prefix: The prefix of keys you want to see in the db    
 
 * Examples:
-
     ldb-dump Database
     ldb-dump -v Database
     ldb-dump Database NS-123
