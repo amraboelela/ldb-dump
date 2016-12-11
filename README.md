@@ -12,13 +12,14 @@ You can use xCode to run it in the simulator.
 
 ### Usage:
 
-    ldb-dump <Database name> [<Prefix>] [-v]
+    ldb-dump [-v] <Database name> [<Prefix>]
+    -v: This switch means printing values along with keys    
     Database name: It can also be the path to the db if not in current path    
     Prefix: The prefix of keys you want to see in the db    
-    -v: This switch means printing values along with keys    
 
-    Examples:
+* Examples:
+
     ldb-dump Database
-    ldb-dump Database -v
+    ldb-dump -v Database
     ldb-dump Database NS-123
-    ldb-dump Database NS-123 -v
+    ldb-dump -v Database NS-123
