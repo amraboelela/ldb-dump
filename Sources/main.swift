@@ -23,16 +23,16 @@ if args.count > 2 {
 
 if arg1 == "?" || arg1 == "" {
         print("Usage")
-        print("ldb-dump <Database name> [<Key>|-a]")
+        print("ldb-dump <Database name> [<Prefix>] [-v]")
         print("Database name: It can also be the path to the db if not in current path")
-        print("Key: The key you want to see its value in the db")
-        print("-a: This switch will print all values for all keys in the db")
-        print("If key and -a is not provided then will display a list of all available keys in the database")
+        print("Prefix: The prefix of keys you want to see in the db")
+        print("-v: This switch means printing values along with keys in the db")
         print("")
         print("Examples:")
         print("ldb-dump Database")
-        print("ldb-dump Database NS-12345")
-        print("ldb-dump Database -a")
+        print("ldb-dump Database -v")
+        print("ldb-dump Database NS-123")
+        print("ldb-dump Database NS-123 -v")
 } else {
     _ = LDBDump(dbName: arg1, key: arg2)
 }

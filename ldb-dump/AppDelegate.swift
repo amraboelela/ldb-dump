@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        _ = LDBDump(dbName: "Database", key: "-a")
+        _ = LDBDump(dbName: "Database", prefix: "NM:", printValues:true)
         return true
     }
 
