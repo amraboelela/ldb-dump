@@ -20,6 +20,6 @@ You can use xCode to run it in the simulator.
         
     Examples:    
     ldb-dump Database
-    ldb-dump Database NS-123 -v
+    ldb-dump Database -v
     ldb-dump Database NS-123   
     ldb-dump Database NS-123 -v
