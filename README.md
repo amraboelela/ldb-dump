@@ -17,9 +17,9 @@ You can use xCode to run it in the simulator.
     Database name: It can also be the path to the db if not in current path    
     Prefix: The prefix of keys you want to see in the db    
 
-* Examples:
+**Examples**
 
-        ldb-dump Database
-        ldb-dump -v Database
-        ldb-dump Database NS-123
-        ldb-dump -v Database NS-123
+    ldb-dump Database
+    ldb-dump -v Database
+    ldb-dump Database NS-123
+    ldb-dump -v Database NS-123
