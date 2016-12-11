@@ -13,9 +13,9 @@ You can use xCode to run it in the simulator.
 ### Usage
 
     ldb-dump [-v] <Database name> [<Prefix>]
-    -v: This switch means printing values along with keys    
+    -v: Print values along with keys. If empty then will print keys only    
     Database name: It can also be the path to the db if not in current path    
-    Prefix: The prefix of keys you want to see in the db    
+    Prefix: The prefix of keys you want to see in the db. If empty, then will print all keys 
 
 **Examples**
 
