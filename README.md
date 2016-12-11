@@ -10,7 +10,7 @@ You can use xCode to run it in the simulator.
 
     $ ./install
 
-### Usage:
+### Usage
 
     ldb-dump [-v] <Database name> [<Prefix>]
     -v: This switch means printing values along with keys    
