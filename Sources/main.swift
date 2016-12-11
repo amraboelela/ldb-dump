@@ -13,12 +13,16 @@ import Foundation
 let args = CommandLine.arguments
 var arg1 = ""
 var arg2 = ""
+var arg3 = ""
 
 if args.count > 1 { 
     arg1 = args[1]
 }
 if args.count > 2 { 
     arg2 = args[2]
+}
+if args.count > 3 {
+    arg3 = args[3]
 }
 
 if arg1 == "?" || arg1 == "" {
@@ -34,5 +38,9 @@ if arg1 == "?" || arg1 == "" {
         print("ldb-dump Database NS-123")
         print("ldb-dump Database NS-123 -v")
 } else {
-    _ = LDBDump(dbName: arg1, key: arg2)
+    var prefix = arg2
+    if prefix == "-v" {
+        prefix = ""
+    }
+    _ = LDBDump(dbName: arg1, prefix:prefix, printValues:arg2 == "-v" || arg3 == "-v")
 }
