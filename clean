@@ -1,6 +1,4 @@
 #!/bin/bash
 
-echo =========== Cleaning ===============
 swift package clean
 rm -rf .build
-
