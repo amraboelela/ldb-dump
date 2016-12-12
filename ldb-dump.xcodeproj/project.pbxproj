@@ -46,7 +46,6 @@
 		63F23AE41DFCCC7C00F000E8 /* install */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install; sourceTree = "<group>"; };
 		63F23AEC1DFCCC8900F000E8 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		63F23AED1DFCCC8900F000E8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		63F23AEE1DFCCC8900F000E8 /* update */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = update; sourceTree = "<group>"; };
 		63F23AEF1DFCCC8900F000E8 /* build */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build; sourceTree = "<group>"; };
 		63F23AF01DFCCC8900F000E8 /* clean */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = clean; sourceTree = "<group>"; };
 		63F23AF11DFCCC8900F000E8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -80,7 +79,6 @@
 			children = (
 				63F23AEC1DFCCC8900F000E8 /* Package.swift */,
 				63F23AED1DFCCC8900F000E8 /* README.md */,
-				63F23AEE1DFCCC8900F000E8 /* update */,
 				63F23AEF1DFCCC8900F000E8 /* build */,
 				63F23AF01DFCCC8900F000E8 /* clean */,
 				63F23AF11DFCCC8900F000E8 /* LICENSE */,
