@@ -42,5 +42,6 @@ public class LDBDump {
                 })
             }
         }
+        db.close()
     }
 }

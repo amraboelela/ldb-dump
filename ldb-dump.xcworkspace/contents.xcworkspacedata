@@ -5,9 +5,9 @@
       location = "group:ldb-dump.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../CLevelDB/CLevelDB.xcodeproj">
+      location = "group:../SwiftLevelDB/SwiftLevelDB.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../SwiftLevelDB/SwiftLevelDB.xcodeproj">
+      location = "group:../CLevelDB/CLevelDB.xcodeproj">
    </FileRef>
 </Workspace>
