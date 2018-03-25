@@ -21,25 +21,25 @@ public class LDBDump {
         switch prefix {
         case "":
             if printValues {
-                db.enumerateKeysAndValuesUsingBlock({key, value, stop in
+                db.enumerateKeysAndValues() { key, value, stop in
                     print(key)
                     print(value)
-                })
+                }
             } else {
-                db.enumerateKeysUsingBlock({key, stop in
+                db.enumerateKeys() { key, stop in
                     print(key)
-                })
+                }
             }
         default:
             if printValues {
-                db.enumerateKeysAndValues(backward: false, startingAtKey: nil, andPrefix: prefix, usingBlock: {key, value, stop in
+                db.enumerateKeysAndValues(backward: false, startingAtKey: nil, andPrefix: prefix) { key, value, stop in
                     print(key)
                     print(value)
-                })
+                }
             } else {
-                db.enumerateKeys(backward: false, startingAtKey: nil, andPrefix: prefix, usingBlock: {key, stop in
+                db.enumerateKeys(backward: false, startingAtKey: nil, andPrefix: prefix) { key, stop in
                     print(key)
-                })
+                }
             }
         }
         db.close()
