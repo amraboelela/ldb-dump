@@ -33,7 +33,7 @@ public class Database: LevelDB {
         #endif
         super.init(path: dbPath, name: name)
         
-        self.encoder = {(key: String, value: [String : Any]) -> Data? in
+        self.dictionaryEncoder = {(key: String, value: [String : Any]) -> Data? in
             do {
                 let data = try JSONSerialization.data(withJSONObject: value)
                 return data
@@ -42,7 +42,7 @@ public class Database: LevelDB {
                 return nil
             }
         }
-        self.decoder = {(key: String, data: Data) -> [String : Any]? in
+        self.dictionaryDecoder = {(key: String, data: Data) -> [String : Any]? in
             do {
                 if let result = try JSONSerialization.jsonObject(with: data) as? [String : Any] {
                     return result

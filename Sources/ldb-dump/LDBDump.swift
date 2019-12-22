@@ -21,7 +21,7 @@ public class LDBDump {
         switch prefix {
         case "":
             if printValues {
-                db.enumerateKeysAndValues() { key, value, stop in
+                db.enumerateKeysAndDictionaries() { key, value, stop in
                     print(key)
                     print(value)
                 }
@@ -32,7 +32,7 @@ public class LDBDump {
             }
         default:
             if printValues {
-                db.enumerateKeysAndValues(backward: false, startingAtKey: nil, andPrefix: prefix) { key, value, stop in
+                db.enumerateKeysAndDictionaries(backward: false, startingAtKey: nil, andPrefix: prefix) { key, value, stop in
                     print(key)
                     print(value)
                 }

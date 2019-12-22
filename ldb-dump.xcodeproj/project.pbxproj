@@ -7,36 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63F23ABC1DFCCB7D00F000E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F23ABB1DFCCB7D00F000E8 /* AppDelegate.swift */; };
-		63F23ABE1DFCCB7D00F000E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F23ABD1DFCCB7D00F000E8 /* ViewController.swift */; };
-		63F23AC11DFCCB7D00F000E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F23ABF1DFCCB7D00F000E8 /* Main.storyboard */; };
-		63F23AC31DFCCB7D00F000E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F23AC21DFCCB7D00F000E8 /* Assets.xcassets */; };
-		63F23AC61DFCCB7D00F000E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F23AC41DFCCB7D00F000E8 /* LaunchScreen.storyboard */; };
-		63F23AEB1DFCCC7C00F000E8 /* install in Resources */ = {isa = PBXBuildFile; fileRef = 63F23AE41DFCCC7C00F000E8 /* install */; };
 		63F23AFF1DFCCE2300F000E8 /* LDBDumpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F23AFC1DFCCDBC00F000E8 /* LDBDumpTests.swift */; };
 		63F23B001DFCCE2700F000E8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63F23AFB1DFCCDBC00F000E8 /* Info.plist */; };
-		63F23B031DFCCE5200F000E8 /* SwiftLevelDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F23B021DFCCE5200F000E8 /* SwiftLevelDB.framework */; };
-		ED5C874F2068208F006FF4B0 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C874C2068208F006FF4B0 /* Database.swift */; };
-		ED5C87502068208F006FF4B0 /* LDBDump.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C874D2068208F006FF4B0 /* LDBDump.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		63F23ACD1DFCCB7D00F000E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 63F23AB01DFCCB7D00F000E8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 63F23AB71DFCCB7D00F000E8;
-			remoteInfo = "ldb-dump";
+/* Begin PBXCopyFilesBuildPhase section */
+		F545950F23AF07EA00FA77D7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		63F23AB81DFCCB7D00F000E8 /* ldb-dump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ldb-dump.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63F23ABB1DFCCB7D00F000E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63F23ABD1DFCCB7D00F000E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		63F23AC01DFCCB7D00F000E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63F23AC21DFCCB7D00F000E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		63F23AC51DFCCB7D00F000E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63F23AC71DFCCB7D00F000E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63F23ACC1DFCCB7D00F000E8 /* ldb-dumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ldb-dumpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F23ADF1DFCCC7C00F000E8 /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
@@ -52,18 +40,18 @@
 		ED5C874C2068208F006FF4B0 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		ED5C874D2068208F006FF4B0 /* LDBDump.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDBDump.swift; sourceTree = "<group>"; };
 		ED5C874E2068208F006FF4B0 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F545951123AF07EA00FA77D7 /* ldb-dump */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ldb-dump"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		63F23AB51DFCCB7D00F000E8 /* Frameworks */ = {
+		63F23AC91DFCCB7D00F000E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63F23B031DFCCE5200F000E8 /* SwiftLevelDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63F23AC91DFCCB7D00F000E8 /* Frameworks */ = {
+		F545950E23AF07EA00FA77D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,8 +81,8 @@
 		63F23AB91DFCCB7D00F000E8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63F23AB81DFCCB7D00F000E8 /* ldb-dump.app */,
 				63F23ACC1DFCCB7D00F000E8 /* ldb-dumpTests.xctest */,
+				F545951123AF07EA00FA77D7 /* ldb-dump */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,11 +90,7 @@
 		63F23ABA1DFCCB7D00F000E8 /* ldb-dump */ = {
 			isa = PBXGroup;
 			children = (
-				63F23ABB1DFCCB7D00F000E8 /* AppDelegate.swift */,
-				63F23ABD1DFCCB7D00F000E8 /* ViewController.swift */,
-				63F23ABF1DFCCB7D00F000E8 /* Main.storyboard */,
 				63F23AC21DFCCB7D00F000E8 /* Assets.xcassets */,
-				63F23AC41DFCCB7D00F000E8 /* LaunchScreen.storyboard */,
 				63F23AC71DFCCB7D00F000E8 /* Info.plist */,
 			);
 			path = "ldb-dump";
@@ -159,23 +143,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		63F23AB71DFCCB7D00F000E8 /* ldb-dump */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 63F23AD51DFCCB7D00F000E8 /* Build configuration list for PBXNativeTarget "ldb-dump" */;
-			buildPhases = (
-				63F23AB41DFCCB7D00F000E8 /* Sources */,
-				63F23AB51DFCCB7D00F000E8 /* Frameworks */,
-				63F23AB61DFCCB7D00F000E8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ldb-dump";
-			productName = "ldb-dump";
-			productReference = 63F23AB81DFCCB7D00F000E8 /* ldb-dump.app */;
-			productType = "com.apple.product-type.application";
-		};
 		63F23ACB1DFCCB7D00F000E8 /* ldb-dumpTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63F23AD81DFCCB7D00F000E8 /* Build configuration list for PBXNativeTarget "ldb-dumpTests" */;
@@ -187,12 +154,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				63F23ACE1DFCCB7D00F000E8 /* PBXTargetDependency */,
 			);
 			name = "ldb-dumpTests";
 			productName = "ldb-dumpTests";
 			productReference = 63F23ACC1DFCCB7D00F000E8 /* ldb-dumpTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F545951023AF07EA00FA77D7 /* ldb-dump */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F545951523AF07EA00FA77D7 /* Build configuration list for PBXNativeTarget "ldb-dump" */;
+			buildPhases = (
+				F545950D23AF07EA00FA77D7 /* Sources */,
+				F545950E23AF07EA00FA77D7 /* Frameworks */,
+				F545950F23AF07EA00FA77D7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ldb-dump";
+			productName = "ldb-dump";
+			productReference = F545951123AF07EA00FA77D7 /* ldb-dump */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -200,18 +183,18 @@
 		63F23AB01DFCCB7D00F000E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Amr Aboelela";
 				TargetAttributes = {
-					63F23AB71DFCCB7D00F000E8 = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-					};
 					63F23ACB1DFCCB7D00F000E8 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 63F23AB71DFCCB7D00F000E8;
+					};
+					F545951023AF07EA00FA77D7 = {
+						CreatedOnToolsVersion = 11.3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -220,6 +203,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -228,24 +212,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				63F23AB71DFCCB7D00F000E8 /* ldb-dump */,
 				63F23ACB1DFCCB7D00F000E8 /* ldb-dumpTests */,
+				F545951023AF07EA00FA77D7 /* ldb-dump */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		63F23AB61DFCCB7D00F000E8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63F23AEB1DFCCC7C00F000E8 /* install in Resources */,
-				63F23AC61DFCCB7D00F000E8 /* LaunchScreen.storyboard in Resources */,
-				63F23AC31DFCCB7D00F000E8 /* Assets.xcassets in Resources */,
-				63F23AC11DFCCB7D00F000E8 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		63F23ACA1DFCCB7D00F000E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,17 +230,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		63F23AB41DFCCB7D00F000E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED5C87502068208F006FF4B0 /* LDBDump.swift in Sources */,
-				ED5C874F2068208F006FF4B0 /* Database.swift in Sources */,
-				63F23ABE1DFCCB7D00F000E8 /* ViewController.swift in Sources */,
-				63F23ABC1DFCCB7D00F000E8 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		63F23AC81DFCCB7D00F000E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,54 +238,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F545950D23AF07EA00FA77D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		63F23ACE1DFCCB7D00F000E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 63F23AB71DFCCB7D00F000E8 /* ldb-dump */;
-			targetProxy = 63F23ACD1DFCCB7D00F000E8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		63F23ABF1DFCCB7D00F000E8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63F23AC01DFCCB7D00F000E8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		63F23AC41DFCCB7D00F000E8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63F23AC51DFCCB7D00F000E8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		63F23AD31DFCCB7D00F000E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -360,20 +312,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -396,30 +358,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		63F23AD61DFCCB7D00F000E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "ldb-dump/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.amr.ldb-dump";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		63F23AD71DFCCB7D00F000E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "ldb-dump/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.amr.ldb-dump";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -451,6 +389,41 @@
 			};
 			name = Release;
 		};
+		F545951623AF07EA00FA77D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F545951723AF07EA00FA77D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -463,20 +436,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63F23AD51DFCCB7D00F000E8 /* Build configuration list for PBXNativeTarget "ldb-dump" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				63F23AD61DFCCB7D00F000E8 /* Debug */,
-				63F23AD71DFCCB7D00F000E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		63F23AD81DFCCB7D00F000E8 /* Build configuration list for PBXNativeTarget "ldb-dumpTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63F23AD91DFCCB7D00F000E8 /* Debug */,
 				63F23ADA1DFCCB7D00F000E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F545951523AF07EA00FA77D7 /* Build configuration list for PBXNativeTarget "ldb-dump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F545951623AF07EA00FA77D7 /* Debug */,
+				F545951723AF07EA00FA77D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
