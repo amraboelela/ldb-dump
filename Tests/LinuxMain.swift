@@ -1,6 +1,7 @@
 import XCTest
-@testable import LDBDumpTests
 
-XCTMain([
-    testCase(LDBDumpTests.allTests),
-])
+import ldb_dumpTests
+
+var tests = [XCTestCaseEntry]()
+tests += ldb_dumpTests.allTests()
+XCTMain(tests)
