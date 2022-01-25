@@ -1,6 +1,6 @@
 //
 //  LDBDump.swift
-//  ldb-dump
+//  ldbdump
 //
 //  Created by Amr Aboelela on 12/8/16.
 //
