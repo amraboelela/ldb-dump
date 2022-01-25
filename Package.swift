@@ -18,7 +18,7 @@ let package = Package(
     ],
     
     targets: [
-        .target(name: "ldbdump", dependencies: ["SwiftLevelDB"]),
+        .executableTarget(name: "ldbdump", dependencies: ["SwiftLevelDB"]),
         .testTarget(name: "ldbdumpTests", dependencies: ["ldbdump"]),
     ]
 )
