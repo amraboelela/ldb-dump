@@ -55,8 +55,5 @@ func main() {
             _ = await LDBDump(dbName: dbName, prefix: prefix, printValues: printValues)
         }
     }
-    Thread.sleep(forTimeInterval: 5)
-    /*while true {
-        // wait
-    }*/
+    Thread.sleep(forTimeInterval: 3)
 }
