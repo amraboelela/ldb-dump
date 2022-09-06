@@ -21,6 +21,28 @@ public class LDBDump {
         //print("root: \(root)")
         let db = LevelDB(parentPath: ".", name: dbName)
         
+        db.dictionaryEncoder = {(key: String, value: [String : Any]) -> Data? in
+            do {
+                let data = try JSONSerialization.data(withJSONObject: value)
+                return data
+            } catch {
+                NSLog("Problem encoding data: \(error)")
+                return nil
+            }
+        }
+        db.dictionaryDecoder = {(key: String, data: Data) -> [String : Any]? in
+            do {
+                if let result = try JSONSerialization.jsonObject(with: data) as? [String : Any] {
+                    return result
+                } else {
+                    return nil
+                }
+            } catch {
+                NSLog("Problem decoding data: \(error)")
+                return nil
+            }
+        }
+        
         switch prefix {
         case "":
             if printValues {
