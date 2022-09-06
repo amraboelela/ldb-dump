@@ -17,11 +17,9 @@ public class LDBDump {
     // MARK: - Life cycle
     
     public init(dbName: String, prefix: String, printValues: Bool) async {
-        //let root = URL(fileURLWithPath: #file.replacingOccurrences(of: "Sources/ldbdump/LDBDump.swift", with: "/")).path
-        //print("root: \(root)")
         let db = LevelDB(parentPath: ".", name: dbName)
         
-        db.dictionaryEncoder = {(key: String, value: [String : Any]) -> Data? in
+        await db.setDictionaryEncoder {(key: String, value: [String : Any]) -> Data? in
             do {
                 let data = try JSONSerialization.data(withJSONObject: value)
                 return data
@@ -30,7 +28,7 @@ public class LDBDump {
                 return nil
             }
         }
-        db.dictionaryDecoder = {(key: String, data: Data) -> [String : Any]? in
+        await db.setDictionaryDecoder {(key: String, data: Data) -> [String : Any]? in
             do {
                 if let result = try JSONSerialization.jsonObject(with: data) as? [String : Any] {
                     return result
