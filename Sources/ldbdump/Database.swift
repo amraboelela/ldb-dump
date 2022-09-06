@@ -9,10 +9,12 @@
 //  found in the LICENSE file.
 //
 
-import Foundation
+//import Foundation
 import SwiftLevelDB
-import Dispatch
 
+public var database: LevelDB!
+
+/*
 public class Database: LevelDB {
     var name = ""
 
@@ -67,4 +69,4 @@ public class Database: LevelDB {
     override public func close() {
         super.close()
     }
-}
+}*/

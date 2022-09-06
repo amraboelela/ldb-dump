@@ -11,23 +11,20 @@ import Foundation
 import Dispatch
 import SwiftLevelDB
 
-//@testable import ldbdump
-
 class BaseTestClass: XCTestCase {
     
     var db : LevelDB?
     
-    override func setUp() {
-        super.setUp()
+    func asyncSetup() async {
         
         db = LevelDB(name: "TestDB")
         guard let db = db else {
             print("Database reference is not existent, failed to open / create database")
             return
         }
-        db.removeAllValues()
+        await db.removeAllValues()
 
-        db.encoder = {(key: String, value: Data) -> Data? in
+        await db.setEncoder {(key: String, value: Data) -> Data? in
             do {
                 let data = value
                 #if TwisterServer || DEBUG
@@ -40,7 +37,7 @@ class BaseTestClass: XCTestCase {
                 return nil
             }
         }
-        db.decoder = {(key: String, data: Data) -> Data? in
+        await db.setEncoder {(key: String, data: Data) -> Data? in
             do {
                 #if TwisterServer || DEBUG
                 return data
@@ -58,9 +55,9 @@ class BaseTestClass: XCTestCase {
         }
     }
     
-    override func tearDown() {
-        db?.close()
+    func asyncTearDown() async {
+        await db?.close()
         db = nil
-        super.tearDown()
+        //super.tearDown()
     }
 }

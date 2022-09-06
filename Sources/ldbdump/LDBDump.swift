@@ -16,32 +16,35 @@ public class LDBDump {
 
     // MARK: - Life cycle
     
-    public init(dbName: String, prefix: String, printValues: Bool) {
-        let db = Database(name: dbName)
+    public init(dbName: String, prefix: String, printValues: Bool) async {
+        let root = URL(fileURLWithPath: #file.replacingOccurrences(of: "ldbdump/LDBDump.swift", with: "/")).path
+        let db = LevelDB(parentPath: root + "Library", name: "Database")
+        
+        //let db = Database(name: dbName)
         switch prefix {
         case "":
             if printValues {
-                db.enumerateKeysAndDictionaries() { key, value, stop in
+                await db.enumerateKeysAndDictionaries() { key, value, stop in
                     print(key)
                     print(value)
                 }
             } else {
-                db.enumerateKeys() { key, stop in
+                await db.enumerateKeys() { key, stop in
                     print(key)
                 }
             }
         default:
             if printValues {
-                db.enumerateKeysAndDictionaries(backward: false, startingAtKey: nil, andPrefix: prefix) { key, value, stop in
+                await db.enumerateKeysAndDictionaries(backward: false, startingAtKey: nil, andPrefix: prefix) { key, value, stop in
                     print(key)
                     print(value)
                 }
             } else {
-                db.enumerateKeys(backward: false, startingAtKey: nil, andPrefix: prefix) { key, stop in
+                await db.enumerateKeys(backward: false, startingAtKey: nil, andPrefix: prefix) { key, stop in
                     print(key)
                 }
             }
         }
-        db.close()
+        await db.close()
     }
 }

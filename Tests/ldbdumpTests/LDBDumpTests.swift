@@ -10,19 +10,19 @@ import Foundation
 import Dispatch
 import SwiftLevelDB
 
-//@testable import ldbdump
-
 class LDBDumpTests: BaseTestClass {
     
-    override func setUp() {
-        super.setUp()
+    override func asyncSetup() async {
+        await super.asyncSetup()
     }
     
-    override func tearDown() {
-        super.tearDown()
+    override func asyncTearDown() async {
+        await super.asyncTearDown()
     }
     
-    func testInit() {
+    @available(macOS 12, *)
+    func testInit() async {
+        await asyncSetup()
         XCTAssertNotNil(db, "Database should not be nil")
         guard let db = db else {
             print("\(Date.now) Database reference is not existent, failed to open / create database")
@@ -30,5 +30,6 @@ class LDBDumpTests: BaseTestClass {
         }
         let dbPath = LevelDB.getLibraryPath()
         XCTAssertNotEqual(dbPath, "")
+        await asyncTearDown()
     }
 }
