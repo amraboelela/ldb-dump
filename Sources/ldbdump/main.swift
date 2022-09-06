@@ -40,6 +40,7 @@ func main() {
             print("ldbdump Database NS-123")
             print("ldbdump -v Database NS-123")
         } else {
+            print("ldbdump arg1: \(arg1)")
             var printValues = false
             var dbName = ""
             var prefix = ""
