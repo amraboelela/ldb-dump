@@ -17,9 +17,9 @@ public class LDBDump {
     // MARK: - Life cycle
     
     public init(dbName: String, prefix: String, printValues: Bool) async {
-        let root = URL(fileURLWithPath: #file.replacingOccurrences(of: "ldbdump/LDBDump.swift", with: "/")).path
-        print("root: \(root)")
-        let db = LevelDB(parentPath: root + "Library", name: "Database")
+        //let root = URL(fileURLWithPath: #file.replacingOccurrences(of: "Sources/ldbdump/LDBDump.swift", with: "/")).path
+        //print("root: \(root)")
+        let db = LevelDB(parentPath: ".", name: dbName)
         
         switch prefix {
         case "":
