@@ -18,9 +18,9 @@ public class LDBDump {
     
     public init(dbName: String, prefix: String, printValues: Bool) async {
         let root = URL(fileURLWithPath: #file.replacingOccurrences(of: "ldbdump/LDBDump.swift", with: "/")).path
+        print("root: \(root)")
         let db = LevelDB(parentPath: root + "Library", name: "Database")
         
-        //let db = Database(name: dbName)
         switch prefix {
         case "":
             if printValues {
