@@ -4,21 +4,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "ldbdump",
+    name: "HaneinWebserver",
     platforms: [
-        .macOS(.v11)
-    ],
-    products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .executable(
-            name: "ldbdump",
-            targets: ["ldbdump"]),
+       .macOS(.v12)
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/amraboelela/SwiftLevelDB", .branch("master"))
-    ],targets: [
+    ],
+    targets: [
         .executableTarget(name: "ldbdump", dependencies: [
             .product(name: "SwiftLevelDB", package: "SwiftLevelDB"),
         ]),
