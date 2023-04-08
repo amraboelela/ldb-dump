@@ -18,10 +18,10 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/amraboelela/SwiftLevelDB", .branch("master"))
-    ],
-    
-    targets: [
-        .executableTarget(name: "ldbdump", dependencies: ["SwiftLevelDB"]),
+    ],targets: [
+        .executableTarget(name: "ldbdump", dependencies: [
+            .product(name: "SwiftLevelDB", package: "SwiftLevelDB"),
+        ]),
         .testTarget(name: "ldbdumpTests", dependencies: ["ldbdump"]),
     ]
 )
